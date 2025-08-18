@@ -12,9 +12,6 @@ struct carta {
     int pontosTuristicos;
     float densidadePopulacional;
     float pibPerCapita;
-    
-    
-
 
 };
 
