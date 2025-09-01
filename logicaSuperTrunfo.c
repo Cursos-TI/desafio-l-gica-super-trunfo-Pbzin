@@ -29,13 +29,13 @@ int main () {
     int opcao;
     printf("=== SUPER TRUNFO - MENU DE ATRIBUTOS ===\n");
     printf("Escolha o atributo para comparar:\n");
-    printf("1 - População\n");
-    printf("2 - Área\n");
+    printf("1 - Populacao\n");
+    printf("2 - Area\n");
     printf("3 - PIB\n");
-    printf("4 - Pontos turísticos\n");
+    printf("4 - Pontos turisticos\n");
     printf("5 - Densidade populacional\n");
     printf("6 - PIB per capita\n");
-    printf("Opção: ");
+    printf("Opcao: ");
     scanf("%d", &opcao);
 
     printf("\nComparando %s (Carta 1) e %s (Carta 2)\n\n", carta1.cidade, carta2.cidade);
