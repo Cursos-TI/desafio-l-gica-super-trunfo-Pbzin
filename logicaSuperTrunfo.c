@@ -42,7 +42,8 @@ int main () {
 
     switch (opcao) {
         case 1:
-            printf("Atributo: População\n");
+            // Comparacao por populacao
+            printf("Atributo: Populacao\n");
             printf("%s: %d\n", carta1.cidade, carta1.populacao);
             printf("%s: %d\n", carta2.cidade, carta2.populacao);
             if (carta1.populacao > carta2.populacao) {
@@ -55,7 +56,8 @@ int main () {
             break;
 
         case 2:
-            printf("Atributo: Área\n");
+            // Comparacao por area
+            printf("Atributo: Area\n");
             printf("%s: %.2f\n", carta1.cidade, carta1.area);
             printf("%s: %.2f\n", carta2.cidade, carta2.area);
             if (carta1.area > carta2.area) {
@@ -68,6 +70,7 @@ int main () {
             break;
 
         case 3:
+            // Comparacao por PIB
             printf("Atributo: PIB\n");
             printf("%s: %.2f\n", carta1.cidade, carta1.pib);
             printf("%s: %.2f\n", carta2.cidade, carta2.pib);
@@ -81,7 +84,8 @@ int main () {
             break;
 
         case 4:
-            printf("Atributo: Pontos Turísticos\n");
+            // Comparacao por pontos turisticos
+            printf("Atributo: Pontos Turisticos\n");
             printf("%s: %d\n", carta1.cidade, carta1.pontosTuristicos);
             printf("%s: %d\n", carta2.cidade, carta2.pontosTuristicos);
             if (carta1.pontosTuristicos > carta2.pontosTuristicos) {
@@ -94,6 +98,8 @@ int main () {
             break;
 
         case 5:
+            // Comparacao por densidade populacional
+            // OBS: nesse atributo, vence a cidade com MENOR densidade
             printf("Atributo: Densidade Populacional\n");
             printf("%s: %.2f\n", carta1.cidade, carta1.densidadePopulacional);
             printf("%s: %.2f\n", carta2.cidade, carta2.densidadePopulacional);
@@ -108,6 +114,7 @@ int main () {
             break;
 
         case 6:
+             // Comparacao por PIB per capita
             printf("Atributo: PIB per Capita\n");
             printf("%s: %.2f\n", carta1.cidade, carta1.pibPerCapita);
             printf("%s: %.2f\n", carta2.cidade, carta2.pibPerCapita);
@@ -121,6 +128,7 @@ int main () {
             break;
 
         default:
+            // Caso o usuario digite uma opcao invalida
             printf("Opção inválida!\n");
             break;
     }
